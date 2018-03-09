@@ -53,7 +53,7 @@ min-width:1300px;
   width: 100%;
   margin:0 ;
   list-style:none;
-
+  z-index:2;
 }
 .navbar a {
   float:center;
@@ -126,6 +126,15 @@ color:black;
 padding:10px;
 pointer-events:none;
 }
+a
+{
+opacity: 0.5;
+transition:opacity 1s;
+}
+a:hover
+{
+opacity: 1.0;
+}
 </style>
 
 <body>
@@ -137,29 +146,29 @@ pointer-events:none;
 <hr style="border: 1px solid #fdeb48;" >
 	<font size = "20" >
 &nbsp;&nbsp;
-	<a href = "#home" class="hvr-shutter-out-horizontal" >HOME</a> | 
-	<a href = "#aboutus"class="hvr-shutter-out-horizontal"> ABOUT US</a> |
-	<a href = "#services"class="hvr-shutter-out-horizontal"> SERVICES</a> |
-	<a href = "#clients"class="hvr-shutter-out-horizontal"> OUR CLIENTS</a> |
-	<a href = "#contact"class="hvr-shutter-out-horizontal"> CONTACT US</a> |
+	<a href = "#home" class="hvr-shutter-out-horizontal" style="opacity:1.0;">HOME</a> | 
+	<a href = "#aboutus"class="hvr-shutter-out-horizontal" style="opacity:1.0;"> ABOUT US</a> |
+	<a href = "#services"class="hvr-shutter-out-horizontal" style="opacity:1.0;"> SERVICES</a> |
+	<a href = "#clients"class="hvr-shutter-out-horizontal" style="opacity:1.0;"> OUR CLIENTS</a> |
+	<a href = "#contact"class="hvr-shutter-out-horizontal" style="opacity:1.0;"> CONTACT US</a> |
 	</font>
 <hr style="border: 1px solid #fdeb48;margin-top:18px;" >
 </div>
 
   <div style ="text-align:right;"><img src = "web images/logo.gif" alt ="" width="192px" height="192px"  style="margin-top:100px;margin-right:2.5vw;"></div>
-<br><br><br><br><br><br><br><br><br><br><br><br><br><br style = "line-height:30px">				
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br style = "line-height:40px">				
 
 <hr style="border:1px solid black;">
 
 </div>
 
 
-	<h2  align = "left" id="home";"><a style = "font-size:46px;color:black;"><br><br>&nbsp;"LET YOUR VOICE BE HEARD"</a></h2>
+	<h2  align = "left" id="home";"><a style = "font-size:46px;color:black;opacity:1.0;"><br><br>&nbsp;"LET YOUR VOICE BE HEARD"</a></h2>
 	<p style="text-align:left;font-size:26px;margin-left:20px;color:#272c33;">Social Clicks is a marketing and advertising agency that helps connect brands to potential customers through Internet solutions. We use professional resources to realise great marketing ideas and run campaigns that will help your brand leave a mark on its industry.
 				   	
 	
 	
-	<h3 align = "left" id="aboutus";><a style = "font-size:46px;color:black;"><br><br>&nbsp;About Us</font></a></h3>
+	<h3 align = "left" id="aboutus";><a style = "font-size:46px;color:black;opacity:1.0;"><br><br>&nbsp;About Us</font></a></h3>
 	
 	<span style="font-family:Impact,Verdana;font-weight:bold;font-size:32px;margin-left:16px;">Our Vision</span><br>
 	<p style="margin-left:30px;font-size:26px;">We aspire to be the most diverse and creative marketing agency.</p><br><br>
@@ -169,7 +178,7 @@ pointer-events:none;
 	<p style="margin-left:32px;font-size:26px;">To create leaders in the people that work with us. We aspire to inspire.</p>
 	
 
-	<h4 align = "left" id="services";><a style = "font-size:46px;color:black;"><br><br>&nbsp;Services</font></a></h4>
+	<h4 align = "left" id="services";><a style = "font-size:46px;color:black;opacity:1.0;"><br><br>&nbsp;Services</font></a></h4>
 	<p style="text-align:left;font-size:26px;margin-left:18px;color:#272c33">Marketing Services:<br style="line-height:40px;">
 	<i class="fa fa-twitter" style="margin-left:0px;font-size:40px;padding:0px;border-style:hidden;color:#00aced;pointer-events:none"></i>&nbsp;&nbsp;<span style ="position:relative;bottom:4px;z-index:-1;">Social Media Campaigns</span><br>
 	<i class="fa fa-globe" style="margin-left:0px;font-size:40px;padding:0px;border-radius:50%;color:black;pointer-events:none"></i>&nbsp;&nbsp;<span style ="position:relative;bottom:4px;z-index:-1;">SEO Marketing & Website Development</span><br>
@@ -178,14 +187,14 @@ pointer-events:none;
 	<i class="fa fa-video-camera" style="margin-left:0px;font-size:40px;padding:0px;border-radius:50%;color:black;pointer-events:none"></i>&nbsp;&nbsp;<span style ="position:relative;bottom:4px;z-index:-1;">Video Production</span>
 	</p>
 
-	<h5 align = "left" id="clients";><a style = "font-size:46px;color:black;"><br><br>&nbsp;Our Clients</font></a></h4>
+	<h5 align = "left" id="clients";><a style = "font-size:46px;color:black;opacity:1.0;"><br><br>&nbsp;Our Clients</font></a></h4>
 	<p style="text-align:left;font-size:26px;margin-left:16px;"></p>
 
-	<img src = "web images/client1.jpg" alt ="" width="256px" height="192px" style="padding:20px;margin:auto;">
-	<img src = "web images/client2.jpg" alt ="" width="192px" height="192px" style="padding:20px;margin:auto;">
-	<img src = "web images/client3.png" alt ="" width="140px" height="140px" style="padding:20px;margin:auto;">
+<a href ="https://www.facebook.com/LaCocinaRestaurantTapasBar/" style ="z-index:-1;"><img src = "web images/client1.jpg" alt ="" width="256px" height="192px" style="padding:20px;margin:auto;"></a>
+<a href ="http://brotzeit.my/" style ="z-index:-1;">	<img src = "web images/client2.jpg" alt ="" width="192px" height="192px" style="padding:20px;margin:auto;"></a>
+<a href ="https://www.facebook.com/lockerandloft/" style ="z-index:-1;"><img src = "web images/client3.png" alt ="" width="140px" height="140px" style="padding:20px;margin-bottom:24px;"></a>
 
-	<h6 align = "left" id="contact";><a style = "font-size:46px;color:black;"><br><br>&nbsp;Contact Us</font></a></h5>
+	<h6 align = "left" id="contact";><a style = "font-size:46px;color:black;opacity:1.0;"><br><br>&nbsp;Contact Us</font></a></h5>
 	<p style="text-align:left;font-size:26px;margin-left:4px;">
 	<i class="fa fa-envelope"></i>
 	socialclicks4u@gmail.com<br>
@@ -196,15 +205,15 @@ pointer-events:none;
 	
 	
 	<span style = "margin-left:22px;font-weight:bold;">Follow Us!</span><br>
-	<span style = "margin-left:4px;">&nbsp;<a href="https://www.facebook.com" class="fa fa-facebook-square"></a>
-	&nbsp;<a href="https://www.instagram.com/" class="fa fa-instagram"></a></span></p>
+	<span style = "margin-left:4px;">&nbsp;<a href="https://www.facebook.com" class="fa fa-facebook-square" style="opacity:1.0;"></a>
+	&nbsp;<a href="https://www.instagram.com/" class="fa fa-instagram" style="opacity:1.0;"></a></span></p>
 	
 
 <div style="background-color:#272c33;color:#dae8e5;min-width:1300px;width:100%;text-align:center;">
 <hr style="border: 1px hidden black;" >
 <span style="margin-top:16px;">Copyright <i class="fa fa-copyright" style="font-size:17px;padding:0px;margin:0px;color:white;pointer-events:none"></i>  SocialClicks, 2018. All Rights Reserved.</span>
 <br style="line-height:30px;">
-<a href = "#top" style="color:#dae8e5;font-size:16px;text-decoration:none;" > Back to top</a>
+<a href = "#top" style="color:#dae8e5;font-size:16px;text-decoration:none;opacity:1.0;" > Back to top</a>
 <br style="line-height:30px;">
 </div>
 </body>
