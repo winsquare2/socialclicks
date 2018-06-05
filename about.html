@@ -77,16 +77,26 @@ font-family:Impact,Verdana;font-weight:bold;font-size:28px;color:#272c33;text-al
 }
 a
 {
-transition:color 0.5s ease;
-color:#fdb700;
-text-decoration:none;
+-webkit-transition-duration: 0.5s; /* Safari */
+ transition-duration: 0.5s;
 }
-
 a:hover
 {
 color:white;
 text-decoration:none;
 }
+button
+{
+-webkit-transition-duration: 0.5s; /* Safari */
+ transition-duration: 0.5s;
+}
+button:hover
+{
+color:white;
+text-decoration:none;
+}
+
+
 </style>
 <body>
 
@@ -95,13 +105,13 @@ text-decoration:none;
   <button onclick="w3_close() " class="w3-bar-item w3-button1 " >CLOSE &times;</button>
 <br>
   <a href="index.html" class="w3-bar-item w3-button1" >HOME</a>
-	<br>
+<br>
   <a href="about.html" class="w3-bar-item w3-button1" >ABOUT US</a>
 <br>
   <a href="services.html" class="w3-bar-item w3-button1">SERVICES</a>
 <br>
-  <a href="index.html" class="w3-bar-item w3-button1" >SOCIAL MEDIA</a>
-<br>
+  <a href="index.html" class="w3-bar-item w3-button1" >OUR SOCIAL MEDIA</a>
+
 </div>
 
 <!-- Page Content -->
@@ -109,7 +119,6 @@ text-decoration:none;
   <button class="w3-button w3-black w3-xlarge" onclick="w3_open()"><i class="fa fa-bars" style="font-size:60px;"></i>
 </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 <span align="center" style="font-size:38px;position:relative;top:8px;">ABOUT US</span>
-
 </div>
 <br>
 <figure ><img src = "web images/a.jpg" alt ="" width="300px" height="200px" ><figcaption style="text-align:center;">BT</figcaption></figure>
@@ -136,10 +145,10 @@ All in all, Social Clicks is a team comprising of highly passionate, competitive
 	<p class="stat1">Our Mission</span><br>
 	<p class="stat">We personalise your branding strategies, internalise your ideas and create a bridge between business and customers. We constantly alter our strategies to different clients ensuring the best strategy is catered to every client. Each idea is taken into consideration to maximise the benefits in the short and long run before brought up to our client. We pledge to be the voice between business and customers.</p><br><br>
 	<p class="stat1">Our Aim</span><br>
-	<p class="stat">To develop leaders in the people that work with us. We aspire to inspire. We strive to build an elite team of young and assembled challengers ready to take on the obstacles plunging into the corporate world.</p>
+	<p class="stat">To develop leaders in the people that work with us. We aspire to inspire. We strive to build an elite team of young and assembled challengers ready to take on the obstacles plunging into the corporate world.</p><br>
 
 <div style="background-color:black;min-width:1350px;width:100%;">
-<h7 align = "left" id="contact" style="font-size:28px;color:#fdb700;opacity:1.0;margin:0;">&nbsp;Contact Us</h7><br>
+<h2 align = "left" id="contact" style="font-family: inherit;font-weight:500;line-height: 1.1;font-size:28px;color:#fdb700;opacity:1.0;margin:0;">&nbsp;Contact Us</h2>
 	
 	<i class="fa fa-envelope" style="font-size:28px;padding:6px;color:#fdb700;"></i>
 	<span style="text-align:left;font-size:20px;font-weight:normal;color:#fdb700;">socialclicks4u@gmail.com</span><br>
@@ -156,9 +165,7 @@ function w3_open() {
 function w3_close() {
     document.getElementById("mySidebar").style.display = "none";
 }
-</script>
-     
+</script>   
 </body>
 </html> 
-
 
