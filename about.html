@@ -1,19 +1,50 @@
 <!DOCTYPE html>
 <html>
 <head><title>SocialClicks</title>
-<meta name="viewport" content="width=device-width">
+<meta name="viewport" content="width=device-width shrink-to-fit=no">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<link rel="stylesheet" href="w3.css"></head>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="w3.css">
+</head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+ 
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+   
+      var hash = this.hash;
+
+    
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 850, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
 <style>
 html
 {
+margin:0px;
+padding:0px;
 width:100%;
 }
 body
 {
 margin:0;
+font-family:"Century Gothic",Verdana,sans-serif;
 min-width:1350px;
+width:100%;
 }
 figure
 {
@@ -27,10 +58,7 @@ p.head
 {
 text-align:center;font-family:Georgia,Times New Roman;font-size:40px;font-style:italic;
 }
-h2
-{
-margin-top:0px;font-size:34px;text-align:center;
-}
+
 p.fill
 {
 font-size:20px;text-align:center;margin:0px 100px;
@@ -47,24 +75,41 @@ p.stat1
 {
 font-family:Impact,Verdana;font-weight:bold;font-size:28px;color:#272c33;text-align:center;
 }
+a
+{
+transition:color 0.5s ease;
+color:#fdb700;
+text-decoration:none;
+}
+
+a:hover
+{
+color:white;
+text-decoration:none;
+}
 </style>
 <body>
 
 <!-- Sidebar -->
 <div class="w3-sidebar w3-bar-block w3-border-right w3-animate-left" style="display:none;" id="mySidebar">
   <button onclick="w3_close() " class="w3-bar-item w3-button1 " >CLOSE &times;</button>
+<br>
   <a href="index.html" class="w3-bar-item w3-button1" >HOME</a>
+	<br>
   <a href="about.html" class="w3-bar-item w3-button1" >ABOUT US</a>
+<br>
   <a href="services.html" class="w3-bar-item w3-button1">SERVICES</a>
+<br>
   <a href="index.html" class="w3-bar-item w3-button1" >SOCIAL MEDIA</a>
+<br>
 </div>
 
 <!-- Page Content -->
 <div class="w3-black" >
-  <button class="w3-button w3-black w3-xlarge" onclick="w3_open()"><i class="fa fa-bars" style="font-size:30px;"></i>
+  <button class="w3-button w3-black w3-xlarge" onclick="w3_open()"><i class="fa fa-bars" style="font-size:60px;"></i>
 </button>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-<span align="center" style="font-size:24px;position:relative;top:4px;">ABOUT US</span>
-<br>
+<span align="center" style="font-size:38px;position:relative;top:8px;">ABOUT US</span>
+
 </div>
 <br>
 <figure ><img src = "web images/a.jpg" alt ="" width="300px" height="200px" ><figcaption style="text-align:center;">BT</figcaption></figure>
@@ -76,10 +121,10 @@ font-family:Impact,Verdana;font-weight:bold;font-size:28px;color:#272c33;text-al
 <p class="top">Social Clicks is a marketing and advertising agency that helps connect brands to potential customers through Internet solutions. We use professional resources to realise great marketing ideas and run campaigns that will help your brand leave a mark on its industry.</p>
 				   	
 	
-<h2><br>About Us</h2>
+
 <p class="story">Our Story</p><br>
 <p class="fill">
-<img src = "web images/sc_circle2.gif" alt ="" width="300px" height="300px" style="display:block;margin-left:auto;margin-right:auto;">
+<img src = "web images/sc_circle2.gif" alt ="" width="300px" height="300px" style="display:block;margin:0px auto 20px;">
 Social Clicks must be a new name to you, that’s because it is! (EST 2018).<br><br> 
 Founder and Director of Social Clicks, Silas and Darryl started their journey by first stepping foot into the highly competitive and adrenaline running world of marketing when they got themselves hired at an international Social Media Marketing Agency. Working there, they learned many things, but felt that many things should and could be improved on internally and externally. Allocation of work can be better organised, management of resources had room for improvement and ultimately productivity needed to increase. More importantly, they believe that there are many things that had to be performed better in order for clients to fully benefit. Voicing up to their superiors was to no avail, hence they knew that it was time to leave the company.<br><br>
 Silas and Darryl decided to continue doing marketing for businesses on a freelance basis as it has always been their passion. They then had the opportunity of learning new skills and diversifying their services. They had no intention of building a business so soon, but it was the confidence and encouragement from the people they work with that instilled the idea into their heads. They believe strongly in working professionally and constantly think of ways to further add value to their clients. Quality service and customer satisfaction are the foundation to their growth.<br><br>
@@ -93,6 +138,17 @@ All in all, Social Clicks is a team comprising of highly passionate, competitive
 	<p class="stat1">Our Aim</span><br>
 	<p class="stat">To develop leaders in the people that work with us. We aspire to inspire. We strive to build an elite team of young and assembled challengers ready to take on the obstacles plunging into the corporate world.</p>
 
+<div style="background-color:black;min-width:1350px;width:100%;">
+<h7 align = "left" id="contact" style="font-size:28px;color:#fdb700;opacity:1.0;margin:0;">&nbsp;Contact Us</h7><br>
+	
+	<i class="fa fa-envelope" style="font-size:28px;padding:6px;color:#fdb700;"></i>
+	<span style="text-align:left;font-size:20px;font-weight:normal;color:#fdb700;">socialclicks4u@gmail.com</span><br>
+	
+	
+	<i class="fa fa-mobile-phone " style="margin-left:8px;font-size:28px;padding:6px;border-radius:50%;color:#fdb700;pointer-events:none"></i>
+	<n style="text-align:left;font-size:20px;font-weight:normal;font-style:italic;color:#fdb700;">+60182010254</n><br>
+</div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script>
 function w3_open() {
     document.getElementById("mySidebar").style.display = "block";
