@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+	<head><title>SocialClicks</title>
+<meta name="viewport" content="width=device-width, intial-scale=1,  shrink-to-fit=no">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script>
+$(document).ready(function(){
+ 
+  $("a").on('click', function(event) {
+
+    if (this.hash !== "") {
+      event.preventDefault();
+
+   
+      var hash = this.hash;
+
+    
+      $('html, body').animate({
+        scrollTop: $(hash).offset().top
+      }, 850, function(){
+   
+        
+        window.location.hash = hash;
+      });
+    } 
+  });
+});
+</script>
+
+
+<style>
+html
+{
+margin:0px;
+padding:0px;
+width:100%;
+}
+body
+{
+margin:0;
+font-family:"Century Gothic",Verdana,sans-serif;
+background-image:url("web images/background.jpg");
+background-size:cover;
+min-width:1300px;
+width:100%;
+}
+
+
+.hvr-shutter-out-horizontal{display:inline-block;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px transparent;position:relative;background:black;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s;border-radius:10px;}.hvr-shutter-out-horizontal:before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#fdeb48;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;border-radius:10px;}.hvr-shutter-out-horizontal:active,.hvr-shutter-out-horizontal:focus,.hvr-shutter-out-horizontal:hover{color:black;border-radius:10px;}.hvr-shutter-out-horizontal:active:before,.hvr-shutter-out-horizontal:focus:before,.hvr-shutter-out-horizontal:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);border-radius:10px;}
+.main
+{
+margin-top:0px;
+background-image:url("web images/home1.jpg");
+background-size:100% 100%;
+height:600px;
+margin-left:0 ;
+margin-bottom:0px;
+
+min-width:1301px;
+}
+width:100%;
+}
+.item
+{
+height:500px;
+}
+
+.abus
+{
+margin:0px 0px;
+padding-bottom:90px;
+background-image:url("web images/about.jpg");
+background-size:100% 700px;
+background-repeat:no-repeat;
+text-align:center;
+font-size:60px;
+
+}
+
+.serv
+{
+padding-bottom:90px;
+margin:0px 0px;
+background-image:url("web images/serv.jpg");
+background-size:100% 100%;
+background-repeat:no-repeat;
+text-align:center;
+font-size:60px;
+}
+.cs
+{
+padding-bottom:90px;
+margin:0px 0px;
+background-image:url("web images/3..jpg");
+background-size:100% 100%;
+background-repeat:no-repeat;
+text-align:center;
+font-size:60px;
+}
+.sm
+{
+padding-bottom:90px;
+margin:0px 0px;
+background-image:url("web images/sm.jpg");
+background-size:100% 600px;
+background-repeat:no-repeat;
+text-align:center;
+font-size:60px;
+}
+button
+{
+vertical-align:middle;
+background-color:black;
+font-weight:bold;position:center;font-size:60px;border-style:hidden;border-radius:10px;}
+a
+{
+transition:color 0.5s ease;
+color:#fdb700;
+text-decoration:none;
+}
+
+a:hover
+{
+color:white;
+text-decoration:none;
+}
+
+.hvr-shutter-out-horizontal{display:inline-block;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px transparent;position:relative;background:black;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s;border-radius:10px;}.hvr-shutter-out-horizontal:before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#fdeb48;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;border-radius:10px;}.hvr-shutter-out-horizontal:active,.hvr-shutter-out-horizontal:focus,.hvr-shutter-out-horizontal:hover{color:black;border-radius:10px;}.hvr-shutter-out-horizontal:active:before,.hvr-shutter-out-horizontal:focus:before,.hvr-shutter-out-horizontal:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);border-radius:10px;} 
+@media only screen and (min-width: 1400px) {
+.main
+{
+margin-top:0px;
+background-image:url("web images/back1.pg");
+background-size:cover;
+margin-left:0 ;
+margin-bottom:0px;
+min-width:1301px;
+max-height:400px;
+width:100%;
+}
+
+.abus
+{
+padding:0px;
+margin:0px 0px;
+background-image:url("web images/about.jpg");
+background-size:100% 500px;
+text-align:center;
+font-size:60px;
+
+}
+
+.serv
+{
+padding:0px;
+margin:0px 0px;
+background-image:url("web images/serv.jpg");
+background-size:100% 500px;
+text-align:center;
+font-size:60px;
+
+}
+.cs
+{
+padding:0px;
+margin:0px 0px;
+background-image:url("web images/3..jpg");
+background-size:100% 500px;
+text-align:center;
+font-size:60px;
+}
+.sm
+{
+padding:0px;
+margin:0px 0px;
+background-image:url("web images/sm.jpg");
+background-size:100% 500px;
+text-align:center;
+font-size:60px;
+}
+}
+</style>
+<body>
+<div class= "main">
+<img src = "web images/sc_circle2.gif" alt ="" width="100px" height="100px" style="position:absolute;top:5px;left:5px;padding:0px;z-index:10;">
+</div>
+
+
+<h1 align = "center"><a style = "font-size:34px;color:black;opacity:1.0;text-decoration:none;">Our Clients</a></h4>
+	
+	<div style="text-align:centre;margin-left:20px;margin-right:20px;">
+	<div class ="owl-carousel owl-theme" >
+	<div><a href ="https://www.facebook.com/LaCocinaRestaurantTapasBar/" ><img src = "web images/client1.jpg" alt ="" width="140px" height="140px" style=""></a></div>
+	<div><a href ="http://brotzeit.my/" ><img src = "web images/client2.jpg" alt ="" width="140px" height="140px" style=""></a></div>
+	<div><a href ="http://www.savini.my" ><img src = "web images/client4.jpg" alt ="" width="140px" height="140px" style="margin-bottom:24px;"></a></div>
+	<div><a href ="https://www.instagram.com/kcojewels/" ><img src = "web images/client5.jpg" alt ="" width="140px" height="140px" style="margin-bottom:24px;"></a></div>
+	<div><a href ="https://www.instagram.com/foretblanc/?hl=en" ><img src = "web images/client6.jpg" alt ="" width="140px" height="140px" style="margin-bottom:24px;"></a></div>
+	</div>
+	</div>
+
+<div class="abus">
+<a href = "about.html" ><br style = "line-height:200px;"><span style="font-weight:bold;position:center;">ABOUT US</span><br style = "line-height:200px;"></a>
+
+</div>
+
+<div class="serv">
+<a href = "services.html" ><br style = "line-height:200px;"><span style="font-weight:bold;position:center;">SERVICES</span><br style = "line-height:200px;"></a>
+
+</div>
+
+<div class="sm">
+<a href = "contact.html" ><br style = "line-height:200px;"><span style="font-weight:bold;position:center;">OUR SOCIAL MEDIA</span><br style = "line-height:200px;"></a>
+
+</div>
+
+<div style="background-color:black;min-width:1300px;width:100%;">
+<h2 align = "left" id="contact" style="font-size:28px;color:#fdb700;opacity:1.0;margin:0px;">&nbsp;Contact Us</h2>
+	
+	<i class="fa fa-envelope" style="font-size:28px;padding:6px;color:#fdb700;"></i>
+	<span style="text-align:left;font-size:20px;color:#fdb700;">socialclicks4u@gmail.com</span><br>
+	
+	
+	<i class="fa fa-mobile-phone " style="margin-left:8px;font-size:28px;padding:6px;border-radius:50%;color:#fdb700;pointer-events:none"></i>
+	<n style="text-align:left;font-size:20px;font-style:italic;color:#fdb700;">+60182010254</n><br>
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+var owl = $('.owl-carousel');
+owl.owlCarousel({
+    items:5,
+    loop:true,
+    margin:60,
+    autoplay:true,
+    autoplayTimeout:2000,
+    autoplayHoverPause:false
+});
+</script>
+</body>
+</html>
