@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html>
 	<head><title>SocialClicks</title>
-<meta name="viewport" content="width=device-width, maximum-scale=1, shrink-to-fit=no">
+<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+<meta name="description" content="Official website of SocialClicks, a Social Media Marketing Agency. Let Your Voice Be Heard."/>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 	</head>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -36,251 +40,160 @@ $(document).ready(function(){
 <style>
 html
 {
+margin:0px;
+padding:0px;
 width:100%;
 }
 body
 {
 margin:0;
 font-family:"Century Gothic",Verdana,sans-serif;
-background-image:url("web images/background.jpg"); 
+background-image:url("web images/background.jpg");
 background-size:cover;
 min-width:1300px;
 width:100%;
 }
 
-.navbar {
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin:0 ;
-  list-style:none;
-  z-index:2;
-}
-.navbar a {
-  float:center;
-  text-align: center;
-  position:relative;
-  display:inline-block;
-  padding: 10px ;
-  text-decoration: none;
-  color:#fdeb48;
-  font-size: 20px;
-  vertical-align:middle;
-}
-
-.navbar a:link
-{
-text-decoration:none;
-}
 
 .hvr-shutter-out-horizontal{display:inline-block;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px transparent;position:relative;background:black;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s;border-radius:10px;}.hvr-shutter-out-horizontal:before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#fdeb48;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;border-radius:10px;}.hvr-shutter-out-horizontal:active,.hvr-shutter-out-horizontal:focus,.hvr-shutter-out-horizontal:hover{color:black;border-radius:10px;}.hvr-shutter-out-horizontal:active:before,.hvr-shutter-out-horizontal:focus:before,.hvr-shutter-out-horizontal:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);border-radius:10px;}
 .main
 {
 margin-top:0px;
-background-image:url("web images/back1.pg");
-background-size:cover;
+background-image:url("web images/home1.jpg");
+background-size:100% 100%;
+height:600px;
 margin-left:0 ;
 margin-bottom:0px;
 min-width:1301px;
 width:100%;
 }
-.fa 
+
+.item
 {
-  padding:30px;
-  font-size: 30px;
-  width: 30px;
-  height: 30px;
-  text-align: center;
-  text-decoration: none;
-  margin: 6px 4px;
-  transition:background-color .5s
-}
-.fa:hover 
-{
-color:white;
-background-color:black;
-border-color:black;
-border-radius:50%;
+height:500px;
 }
 
-.fa-facebook-square
+.abus
 {
-background-color:transparent;
-color:black;
-border-style:solid;
-border-radius:50%;	
-border-color:black;
-padding:16px;
+margin:0px 0px;
+padding-bottom:0px;
+background-image:url("web images/about.jpg");
+background-size:100% 600px;
+background-repeat:no-repeat;
+text-align:center;
+font-size:60px;
+
 }
-.fa-instagram 
+
+.serv
 {
-background-color:transparent;
-color:black;
-border-style:solid;
-border-radius:50%;	
-border-color:black;
-padding:16px;
+padding-bottom:0px;
+margin:0px 0px;
+background-image:url("web images/serv.jpg");
+background-size:100% 500px;
+background-repeat:no-repeat;
+text-align:center;
+font-size:60px;
 }
-.fa-youtube-play 
+.cs
 {
-background-color:transparent;
-color:black;
-border-style:solid;
-border-radius:50%;	
-border-color:black;
-padding:16px;
+padding-bottom:0px;
+margin:0px 0px;
+background-image:url("web images/3..jpg");
+background-size:100% 100%;
+background-repeat:no-repeat;
+text-align:center;
+font-size:60px;
 }
-.fa-envelope
+.sm
 {
-background-color:transparent;
-color:black;
-padding:10px;
-pointer-events:none;
+padding-bottom:0px;
+margin:0px 0px;
+background-image:url("web images/sm.jpg");
+background-size:100% 600px;
+background-repeat:no-repeat;
+text-align:center;
+font-size:60px;
 }
+button
+{
+background:rgba(0, 0, 0, 0.6);
+vertical-align:middle;
+font-weight:bold;position:center;font-size:60px;border-style:hidden;border-radius:10px;}
 a
 {
-opacity: 0.5;
-transition:opacity 0.5s;
-}
-a:hover
-{
-opacity: 1.0;
-}
-.newspaper {
-    -webkit-column-count: 2; 
-    -moz-column-count: 2; 
-    column-count: 2;
-    -webkit-column-gap: 10vw; 
-    -moz-column-gap: 10vw; 
-    column-gap: 10vw;
-    -webkit-column-width: 35vw; /* Chrome, Safari, Opera */
-    -moz-column-width: 35vw; /* Firefox */
-    column-width:35vw;
-   min-width:1301px;
-    
+transition:color 0.5s ease;
+color:white;
+text-decoration:none;
 }
 
+a:hover
+{
+color:white;
+text-decoration:none;
+}
+
+.hvr-shutter-out-horizontal{display:inline-block;-webkit-transform:perspective(1px) translateZ(0);transform:perspective(1px) translateZ(0);box-shadow:0 0 1px transparent;position:relative;background:black;-webkit-transition-property:color;transition-property:color;-webkit-transition-duration:.3s;transition-duration:.3s;border-radius:10px;}.hvr-shutter-out-horizontal:before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:0;right:0;background:#fdeb48;-webkit-transform:scaleX(0);transform:scaleX(0);-webkit-transform-origin:50%;transform-origin:50%;-webkit-transition-property:transform;transition-property:transform;-webkit-transition-duration:.3s;transition-duration:.3s;-webkit-transition-timing-function:ease-out;transition-timing-function:ease-out;border-radius:10px;}.hvr-shutter-out-horizontal:active,.hvr-shutter-out-horizontal:focus,.hvr-shutter-out-horizontal:hover{color:black;border-radius:10px;}.hvr-shutter-out-horizontal:active:before,.hvr-shutter-out-horizontal:focus:before,.hvr-shutter-out-horizontal:hover:before{-webkit-transform:scaleX(1);transform:scaleX(1);border-radius:10px;} 
 @media only screen and (min-width: 1400px) {
 .main
 {
 margin-top:0px;
-background-image:url("web images/background.jpg");
-background-size:cover;
+background-image:url("web images/home1.jpg");
+height:600px;
 margin-left:0 ;
 margin-bottom:0px;
 min-width:1301px;
-width:100%;
-height:40vh;
+}
 
-}
-}
-	
-@media only screen and (max-width: 500px) {
-body
+.abus
 {
-margin:0;
-font-family:"Century Gothic",Verdana,sans-serif;
-font-size:30px !important;
-background-image:url("web images/background.jpg"); 
-background-size:cover;
-min-width:1301px;
-width:100%;
+padding-bottom:0px;
+margin:0px 0px;
+background-image:url("web images/about.jpg");
+background-size:100% 600px;
+text-align:center;
+font-size:60px;
+
 }
-p
+
+.serv
 {
-font-size:30px;
-	}
-.navbar {
-  overflow: hidden;
-  background-color: black;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  margin:0 ;
-  list-style:none;
-  z-index:2;
-}
-.navbar a {
-  float:center;
-  text-align: center;
-  position:relative;
-  display:inline-block;
-  padding: 20px ;
-  text-decoration: none;
-  color:#fdeb48;
-  font-size: 30px;
-  vertical-align:middle;
-}
-}
+padding-bottom:0px;
+margin:0px 0px;
+background-image:url("web images/serv.jpg");
+background-size:100% 500px;
+text-align:center;
+font-size:60px;
 
-
+}
+.cs
+{
+padding-bottom:0px;
+margin:0px 0px;
+background-image:url("web images/3..jpg");
+background-size:100% 100%px;
+text-align:center;
+font-size:60px;
+}
+.sm
+{
+padding-bottom:0px;
+margin:0px 0px;
+background-image:url("web images/sm.jpg");
+background-size:100% 600px;
+text-align:center;
+font-size:60px;
+}
+}
 </style>
-
 <body>
-<a id="top" ><br><br></a>
-
-<div class = "main" >
-
-<div class = "navbar" align ="center" >
-<hr style="border: 1px solid #fdeb48;margin-top:3px;margin-bottom:3px;" >
-	<font size = "6" >
-<img src = "web images/logo2.jpg" alt ="" width="40px" height="40px" style="vertical-align:middle;padding:0px;">
-	<a href = "#home" class="hvr-shutter-out-horizontal" style="margin-left:12vmin;opacity:1.0;">HOME</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-	<a href = "#aboutus"class="hvr-shutter-out-horizontal" style="opacity:1.0;"> ABOUT US</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-	<a href = "#services"class="hvr-shutter-out-horizontal" style="opacity:1.0;"> SERVICES</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-	<a href = "#clients"class="hvr-shutter-out-horizontal" style="opacity:1.0;"> OUR CLIENTS</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-	<a href = "#contact"class="hvr-shutter-out-horizontal" style="opacity:1.0;"> CONTACT US</a>&nbsp;&nbsp;&nbsp;&nbsp; 
-	</font>
-<hr style="border: 1px solid #fdeb48;margin-top:3px;margin-bottom:3px;" >
-</div>
-
-  <div style ="text-align:right;"><img src = "web images/logo4.jpg" alt ="" width="325px" height="333px"  style="margin-top:65px;margin-right:2vw;"></div>
-				
-
-<hr style="border:1px hidden black;margin:0px;">
+<div class= "main">
+<img src = "web images/sc_circle2.gif" alt ="" width="100px" height="100px" style="position:absolute;top:5px;left:5px;padding:0px;z-index:10;">
 </div>
 
 
-	<h2  align = "left" id="home";"><a style ="font-family:Georgia,Times New Roman;font-size:40px;font-style:italic;color:black;opacity:1.0;"><br style="line-height:60px;">&nbsp;"LET YOUR VOICE BE HEARD"</a></h2>
-	<p style="text-align:left;font-size:26px;margin-left:20px;color:#272c33;">Social Clicks is a marketing and advertising agency that helps connect brands to potential customers through Internet solutions. We use professional resources to realise great marketing ideas and run campaigns that will help your brand leave a mark on its industry.</p>
-				   	
+<h1 align = "center"><a style = "font-size:34px;color:black;opacity:1.0;text-decoration:none;">Our Clients</a></h4>
 	
-	
-	<h3 align = "left" id="aboutus";><a style = "font-size:34px;color:black;opacity:1.0;"><br style="line-height:60px;">&nbsp;About Us</font></a></h3>
-	<span style="font-family:Impact,Verdana;font-weight:bold;font-size:28px;margin-left:16px;color:#272c33;">Our Story</span><br>
-	<p style="margin-left:30px;font-size:20px;text-align:justify;margin-right:30px;">
-Social Clicks must be a new name to you, that’s because it is! (EST 2018).<br><br> 
-Founder and Director of Social Clicks, Silas and Darryl started their journey by first stepping foot into the highly competitive and adrenaline running world of marketing when they got themselves hired at an international Social Media Marketing Agency. Working there, they learned many things, but felt that many things should and could be improved on internally and externally. Allocation of work can be better organised, management of resources had room for improvement and ultimately productivity needed to increase. More importantly, they believe that there are many things that had to be performed better in order for clients to fully benefit. Voicing up to their superiors was to no avail, hence they knew that it was time to leave the company.<br><br>
-Silas and Darryl decided to continue doing marketing for businesses on a freelance basis as it has always been their passion. They then had the opportunity of learning new skills and diversifying their services. They had no intention of building a business so soon, but it was the confidence and encouragement from the people they work with that instilled the idea into their heads. They believe strongly in working professionally and constantly think of ways to further add value to their clients. Quality service and customer satisfaction are the foundation to their growth.<br><br>
-Soon enough, Founder, Silas decided to found Social Clicks and invited Director, Darryl to take upon this journey with him. They recognise their talent and potential and recruited more bright and ambitious members to chase this dream with them. With a team full of leaders determined to advance and take on the corporate world, Social Clicks’ team will embark on a challenging but exciting journey that is far from its end.<br><br>
-Fast forward a few months after, things consistently kept falling into place for Social Clicks. The team grew in maturity, size and bond. Every member treated each other like family and worked together to get things accomplished. With so much politics going on in so many corporations and organisations, the Social Clicks’ team decided that they have no interest in stepping above one another but instead boost each other to achieve greater things. Silas and Darryl were always fixated that all members have to love and enjoy their job, and being part of Social Clicks as a whole. In terms of business, sales surpassed expected targets and the team got busier and busier for good reasons. They soon decided to slow down in taking in clients as they wanted to focus on the existing clients and maintain quality execution in the work that they do.
-All in all, Social Clicks is a team comprising of highly passionate, competitive and young individuals that are not afraid of what they are stepping into. They believe that their biggest competitors are themselves and they are willing to move mountains to achieve their goals.</p><br><br>
-
-	<span style="font-family:Impact,Verdana;font-weight:bold;font-size:28px;margin-left:16px;color:#272c33;">Our Vision</span><br>
-	<p style="margin-left:30px;font-size:20px;text-align:justify;margin-right:30px;">We aspire to be the most diverse and creative marketing agency. We provide solutions and choose the best solution to your problems as there is never one solution to every problem. Creativity in our services provided is key to separate us from our competitors.</p><br><br>
-	<span style="font-family:Impact,Verdana;font-weight:bold;font-size:28px;margin-left:16px;color:#272c33;">Our Mission</span><br>
-	<p style="margin-left:30px;font-size:20px;text-align:justify;margin-right:30px;">We personalise your branding strategies, internalise your ideas and create a bridge between business and customers. We constantly alter our strategies to different clients ensuring the best strategy is catered to every client. Each idea is taken into consideration to maximise the benefits in the short and long run before brought up to our client. We pledge to be the voice between business and customers.</p><br><br>
-	<span style="font-family:Impact,Verdana;font-weight:bold;font-size:28px;margin-left:16px;color:#272c33;">Our Aim</span><br>
-	<p style="margin-left:32px;font-size:20px;text-align:justify;margin-right:30px;">To develop leaders in the people that work with us. We aspire to inspire. We strive to build an elite team of young and assembled challengers ready to take on the obstacles plunging into the corporate world.</p>
-	
-
-	<h4 align = "left" id="services";><a style = "font-size:34px;color:black;opacity:1.0;"><br style="line-height:60px;">&nbsp;Services</font></a></h4>
-	<span style="font-family:Impact,Verdana;font-weight:bold;font-size:28px;margin-left:16px;color:#272c33">Marketing Services:<br style="line-height:30px;"></span>
-	<div class="newspaper">
-	<i class="fa fa-twitter" style="margin-left:18px;margin-right:24px;font-size:24px;padding:0px;border-style:hidden;color:#00aced;pointer-events:none"></i><p style ="display:inline-block;position:relative;bottom:2px;z-index:-1;text-align:left;font-size:20px;color:#272c33;"> Social Media Campaigns</p><br>
-	<i class="fa fa-globe" style="margin-left:18px;margin-right:24px;font-size:24px;padding:0px;border-radius:50%;color:black;pointer-events:none"></i><p style ="display:inline-block;position:relative;bottom:2px;z-index:-1;text-align:left;font-size:20px;color:#272c33;"> SEO Marketing & Website Development</p><br>
-	<i class="fa fa-facebook-square" style="margin-left:18px;margin-right:24px;font-size:24px;padding:0px;border-style:hidden;color:#3b5998;pointer-events:none"></i><p style ="display:inline-block;position:relative;bottom:2px;z-index:-1;text-align:left;font-size:20px;color:#272c33;"> Facebook Ads</p><br>
-	<i class="fa fa-envelope-o" style="margin-left:18px;margin-right:24px;font-size:24px;padding:0px;border-radius:50%;color:black;pointer-events:none"></i><p style ="display:inline-block;position:relative;bottom:2px;z-index:-1;text-align:left;font-size:20px;color:#272c33;"> Email Marketing</p><br>
-	<i class="fa fa-video-camera" style="margin-left:18px;margin-right:24px;font-size:24px;padding:0px;border-radius:50%;color:black;pointer-events:none"></i><p style ="display:inline-block;position:relative;bottom:2px;z-index:-1;text-align:left;font-size:20px;color:#272c33;"> Video Production</p><br>
-	<i class="fa fa-instagram" style="margin-left:18px;margin-right:24px;font-size:24px;padding:0px;border-style:hidden;color:indigo;pointer-events:none"></i><p style ="display:inline-block;position:relative;bottom:2px;z-index:-1;text-align:left;font-size:20px;color:#272c33;"> Instagram Management</p><br>
-	<i class="fa fa-group" style="margin-left:18px;margin-right:24px;font-size:24px;padding:0px;border-style:hidden;pointer-events:none"></i><p style ="display:inline-block;position:relative;bottom:2px;z-index:-1;text-align:left;font-size:20px;color:#272c33;"> PR Service</p>
-	</div>
-
-<h5 align = "left" id="clients";><a style = "font-size:34px;color:black;opacity:1.0;"><br style="line-height:60px;">&nbsp;Our Clients</font></a></h4>
-	
-
 	<div style="text-align:centre;margin-left:20px;margin-right:20px;">
 	<div class ="owl-carousel owl-theme" >
 	<div><a href ="https://www.facebook.com/LaCocinaRestaurantTapasBar/" ><img src = "web images/client1.jpg" alt ="" width="140px" height="140px" style=""></a></div>
@@ -288,30 +201,33 @@ All in all, Social Clicks is a team comprising of highly passionate, competitive
 	<div><a href ="http://www.savini.my" ><img src = "web images/client4.jpg" alt ="" width="140px" height="140px" style="margin-bottom:24px;"></a></div>
 	<div><a href ="https://www.instagram.com/kcojewels/" ><img src = "web images/client5.jpg" alt ="" width="140px" height="140px" style="margin-bottom:24px;"></a></div>
 	<div><a href ="https://www.instagram.com/foretblanc/?hl=en" ><img src = "web images/client6.jpg" alt ="" width="140px" height="140px" style="margin-bottom:24px;"></a></div>
-	</div></div>
+	</div>
+	</div>
 
-	<h6 align = "left" id="contact" style="margin:0px"><a style = "font-size:34px;color:black;opacity:1.0;">&nbsp;Contact Us</font></a></h5>
-	
-	<i class="fa fa-envelope"></i>
-	<span style="text-align:left;font-size:20px;">socialclicks4u@gmail.com</span><br>
-	
-	
-	<i class="fa fa-mobile-phone " style="margin-left:8px;font-size:28px;padding:6px;border-radius:50%;color:black;pointer-events:none"></i>
-	<n style="text-align:left;font-size:20px;font-style:italic;">+60182010254</n><br>
+<div class="abus">
+<a href = "about.html" ><br style = "line-height:200px;"><button style="display:inline-block;font-weight:bold;position:center;">ABOUT US</button><br><br style = "line-height:200px;"></a>
 
-<span style = "margin-left:22px;font-size:20px;font-weight:bold;">Follow Us!</span><br>
-<span style = "margin-left:4px;">
-&nbsp;<a href="https://www.facebook.com" class="fa fa-facebook-square" style="opacity:1.0;"></a>
-&nbsp;<a href="https://www.instagram.com/" class="fa fa-instagram" style="opacity:1.0;"></a>
-&nbsp;<a href="https://www.youtube.com/" class="fa fa-youtube-play" style="opacity:1.0;"></a>
-</span>
+</div>
 
-<div style="background-color:#272c33;color:#dae8e5;min-width:1300px;width:100%;text-align:center;">
-<hr style="border: 1px hidden black;margin:0px;" >
-<span style="margin-top:16px;">Copyright <i class="fa fa-copyright" style="font-size:17px;padding:0px;margin:0px;color:white;pointer-events:none"></i>  SocialClicks, 2018. All Rights Reserved.</span>
-<br style="line-height:30px;">
-<a href = "#top" style="color:#dae8e5;font-size:16px;text-decoration:none;opacity:1.0;" > Back to top</a>
-<br style="line-height:30px;">
+<div class="serv">
+<a href = "services.html" ><br style = "line-height:200px;"><button style="display:inline-block;font-weight:bold;position:center;">SERVICES</button><br><br style = "line-height:200px;"></a>
+
+</div>
+
+<div class="sm">
+<a href = "social.html" ><br style = "line-height:200px;"><button style="display:inline-block;font-weight:bold;position:center;">OUR SOCIAL MEDIA</button><br><br style = "line-height:200px;"></a>
+
+</div>
+
+<div style="background-color:black;min-width:1300px;width:100%;">
+<h2 align = "left" id="contact" style="font-size:28px;color:white;opacity:1.0;margin:0px;">&nbsp;Contact Us</h2>
+	
+	<i class="fa fa-envelope" style="font-size:28px;padding:6px;color:white;"></i>
+	<span style="text-align:left;font-size:20px;color:white;">socialclicks4u@gmail.com</span><br>
+	
+	
+	<i class="fa fa-mobile-phone " style="margin-left:8px;font-size:28px;padding:6px;border-radius:50%;color:white;pointer-events:none"></i>
+	<n style="text-align:left;font-size:20px;font-style:italic;color:white;">+60182010254</n><br>
 </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -327,6 +243,5 @@ owl.owlCarousel({
     autoplayHoverPause:false
 });
 </script>
-
 </body>
 </html>
